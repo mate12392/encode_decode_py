@@ -1,0 +1,19 @@
+[build-system]
+requires = ["getopt", "random"]
+
+[project]
+name = "coder_VIDAK_BECS_MATE"
+version = "0.0.1"
+authors = [{ name = "Vidak-Becs Mate", email = "matevidakbecs@gmail.com" }]
+description = "encoding and decoding library for python"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+
+"Homepage" = ""
