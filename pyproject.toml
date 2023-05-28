@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "encode_decode_vbm"
-version = "0.1.0"
+version = "0.1.1"
 authors = [{ name = "Vidak-Becs Mate", email = "matevidakbecs@gmail.com" }]
 description = "encoding and decoding library for python"
 readme = "README.md"
