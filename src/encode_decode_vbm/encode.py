@@ -24,6 +24,3 @@ def encode(mess: str, method: str = "sha", key: str = "crypt", salty: bool = Tru
         return f"vig${salt}${cypher(mess, key)}"
     else:
         return "I can't currently encode with that method"
-
-if __name__ == "__main__":
-    print(encode(mess="asd"))
