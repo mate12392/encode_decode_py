@@ -1,6 +1,6 @@
-from b32 import base32d
-from b64 import base64d
-from vigenere import decypher
+from .funcs.b32 import base32d
+from .funcs.b64 import base64d
+from .funcs.vigenere import decypher
 
 
 def decode(mess: str, method='sha', key: str = 'crypt'):

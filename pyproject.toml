@@ -1,13 +1,14 @@
 [build-system]
-requires = ["getopt", "random"]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
-name = "coder_VIDAK_BECS_MATE"
-version = "0.0.1"
+name = "encode_decode_vbm"
+version = "0.1.0"
 authors = [{ name = "Vidak-Becs Mate", email = "matevidakbecs@gmail.com" }]
 description = "encoding and decoding library for python"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

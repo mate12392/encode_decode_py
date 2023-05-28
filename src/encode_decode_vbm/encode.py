@@ -1,11 +1,14 @@
-from sha256 import sha256
-from b32 import base32e
-from b64 import base64e
-from vigenere import cypher
-from salter import get_salt
+from .funcs.sha256 import sha256
+from .funcs.b32 import base32e
+from .funcs.b64 import base64e
+from .funcs.vigenere import cypher
+from .funcs.salter import get_salt
 
 
 def encode(mess: str, method: str = "sha", key: str = "crypt", salty: bool = True):
+    """
+    Encodes a message
+    """
     if salty == True:
         salt = get_salt()
     else:
@@ -21,3 +24,6 @@ def encode(mess: str, method: str = "sha", key: str = "crypt", salty: bool = Tru
         return f"vig${salt}${cypher(mess, key)}"
     else:
         return "I can't currently encode with that method"
+
+if __name__ == "__main__":
+    print(encode(mess="asd"))
