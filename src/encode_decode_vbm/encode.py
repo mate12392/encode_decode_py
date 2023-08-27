@@ -8,7 +8,7 @@ from .funcs.salter import get_salt
 def encode(mess: str, method: str = "sha", key: str = "crypt", salty: bool = False) -> str:
     """
     Encodes or hashes a message.
-    Takes in the message, the method, key and whether you want the hash or encoding to be salted all as strings except for the salt, it has to be True.
+    Takes in the message, the method, key and whether you want the hash or encoding to be salted all as strings except for the salt, it is a Boolean.
     Methods available: SHA256 (sha or sha256), BASE32 (b32 or base32), BASE64 (b64 or base64), VIGENERE (vig or vigenere).
     Defaults the method to SHA256, the key to crypt, the salt to False.
     """
