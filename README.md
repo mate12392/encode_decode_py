@@ -1,1 +1,8 @@
-#Python Encode Decode Library by Vidak-Becs Mate
+Python Encode-Decode Library made by Vidak-Becs Mate
+
+Current methods include:
+ - SHA256 (encode only for obvious reasons)
+ - Base32
+ - Base64
+ - Vigenere cypher
+
